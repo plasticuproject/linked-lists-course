@@ -12,7 +12,7 @@ class Node:  # pylint: disable=too-few-public-methods
 
 
 def print_linked_list_iterative(head: Optional[Node]) -> None:
-    """Iterate through linked list and print contents."""
+    """Iterate through linked list and print all Node values."""
     current: Optional[Node] = head
     while current:
         print(current.val)
@@ -20,7 +20,8 @@ def print_linked_list_iterative(head: Optional[Node]) -> None:
 
 
 def print_linked_list_recursive(head: Optional[Node]) -> Optional[Node]:
-    """Recursively traverse through linked list and print contents."""
+    """Recursively traverse through linked list and print all
+    Node values."""
     if not head:
         return None
     print(head.val)
