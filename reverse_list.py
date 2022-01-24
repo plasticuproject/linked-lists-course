@@ -14,7 +14,7 @@ class Node:  # pylint: disable=too-few-public-methods
 def reverse_list_iterative(head: Optional[Node]) -> Optional[Node]:
     """Iteratively traverse through and mutate linked list to
     reverse the order. Returns new head Node."""
-    current: Optional[Node] = head
+    current = head
     previous_node: Optional[Node] = None
     next_node: Optional[Node] = None
     while current:
@@ -32,7 +32,7 @@ def reverse_list_recursive(
     reverse the order. Returns new head Node."""
     if not head:
         return previous_node
-    next_node: Optional[Node] = head.next
+    next_node = head.next
     head.next = previous_node
     return reverse_list_recursive(next_node, head)
 
@@ -52,7 +52,7 @@ c.next = d
 # TESTS
 def linked_list_values_iterative(head: Optional[Node]) -> List[str]:
     """Iterate through linked list and return array of all Node values."""
-    current: Optional[Node] = head
+    current = head
     values: List[str] = []
     while current:
         if current.val:

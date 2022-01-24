@@ -13,7 +13,7 @@ class Node:  # pylint: disable=too-few-public-methods
 
 def linked_list_values_iterative(head: Optional[Node]) -> List[str]:
     """Iterate through linked list and return array of all Node values."""
-    current: Optional[Node] = head
+    current = head
     values: List[str] = []
     while current:
         if current.val:

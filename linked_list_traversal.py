@@ -13,7 +13,7 @@ class Node:  # pylint: disable=too-few-public-methods
 
 def print_linked_list_iterative(head: Optional[Node]) -> None:
     """Iterate through linked list and print all Node values."""
-    current: Optional[Node] = head
+    current = head
     while current:
         print(current.val)
         current = current.next

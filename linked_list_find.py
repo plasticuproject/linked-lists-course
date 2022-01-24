@@ -15,7 +15,7 @@ def linked_list_find_iterative(head: Optional[Node],
                                target: Optional[str]) -> bool:
     """Iterate through linked list and return True if target
     is found, False otherwise."""
-    current: Optional[Node] = head
+    current = head
     while current:
         if current.val == target:
             return True

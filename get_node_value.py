@@ -18,7 +18,7 @@ def get_node_value_iterative(head: Optional[Node],
     if not idx:
         idx = 0
     idx_count: int = 0
-    current: Optional[Node] = head
+    current = head
     while current:
         if idx_count == idx:
             return current.val
