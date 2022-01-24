@@ -64,17 +64,17 @@ def linked_list_values_iterative(head: Optional[Node]) -> List[str]:
 assert not reverse_list_iterative(None)
 f = reverse_list_iterative(a)
 assert linked_list_values_iterative(f) == ["D", "C", "B", "A"]
-f = reverse_list_iterative(f)
+g = reverse_list_iterative(f)
 assert linked_list_values_iterative(a) == ["A", "B", "C", "D"]
-f = reverse_list_iterative(d)
+h = reverse_list_iterative(d)
 assert linked_list_values_iterative(d) == ["D"]
 
 assert not reverse_list_recursive(None)
-f = reverse_list_recursive(a)
+i = reverse_list_recursive(a)
 assert linked_list_values_iterative(f) == ["D", "C", "B", "A"]
-f = reverse_list_recursive(f)
+j = reverse_list_recursive(i)
 assert linked_list_values_iterative(a) == ["A", "B", "C", "D"]
-f = reverse_list_recursive(d)
+k = reverse_list_recursive(d)
 assert linked_list_values_iterative(d) == ["D"]
 
 # TIME TESTS
